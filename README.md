@@ -1,18 +1,21 @@
 # Portfolio Interface Prototype
 
-A small browser prototype for composing and previewing a portfolio introduction.
+A form-driven portfolio introduction builder for testing content structure, profile links and preview behaviour.
 
-## What it demonstrates
+## Highlights
 
-- Accessible form labels and required fields
-- Safe text rendering without injecting user input as HTML
-- Basic URL validation for optional profile links
-- A responsive, dependency-free interface
+- Collect a name, professional focus and short introduction
+- Validate optional GitHub and LinkedIn links
+- Render a clean preview without injecting user-supplied HTML
+- Keep the interaction simple enough to use without a framework
+- Provide a responsive layout for quick review on different screens
 
-## Run
+## Technical approach
+
+The form is separated from the preview renderer. Input is trimmed, URLs are checked with the URL API, and preview content is created with DOM nodes so text remains text.
+
+## Run locally
 
 Open portify.html in a modern browser. No build step is required.
 
-## Scope
-
-This is a learning project for presentation and interface structure. It does not publish a portfolio or store profile data.
+The project explores the interface decisions behind a small portfolio builder: hierarchy, trust signals, link handling and readable presentation.
